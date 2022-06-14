@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>The Cats</title>
+  </head>
+  <body>
+    <h1>Random Cats</h1>
+
+    <span id="error"></span>
+
+    <section id="randomMichis">
+      <h2>Michis Random</h2>
+
+      <div class="randomMichis-Article-Container">
+        <article>
+          <img id="img1" width="250" height="350" alt="Random Cats" />
+          <button id="btn1">Guardar en Favs</button>
+        </article>
+
+        <article>
+          <img id="img2" width="250" height="350" alt="Random Cats" />
+          <button id="btn2">Guardar en Favs</button>
+        </article>
+
+        <article>
+          <img id="img3" width="250" height="350" alt="Random Cats" />
+          <button id="btn3">Guardar en Favs</button>
+        </article>
+      </div>
+
+      <br />
+
+      <button onclick="loadRandomMichis()">Reload</button>
+    </section>
+
+    <section id="uploadMichi">
+      <h2>Sube a tu michi</h2>
+
+      <form id="uploadFormMichi">
+        <input id="uploadFile" type="file" name="file" />
+        <button type="button" onclick="uploadMichiPhoto()">
+          Subir foto michi
+        </button>
+      </form>
+    </section>
+
+    <section id="favoritesMichis">
+      <h2>Michis Favs</h2>
+    </section>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
